@@ -4,7 +4,7 @@ Wrapper for Image Generation using DALL-E from OpenAI.
 ## Prerequisites
 1. `Python 3.7+`
 2. `pip`
-3. Account at (OpenAI)[https://beta.openai.com/]. Make sure you have a Secret Key.
+3. Account at [OpenAI](https://beta.openai.com/). Make sure you have a Secret Key.
 
 ## Install the code.
 1. Install `poetry`
