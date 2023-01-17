@@ -7,14 +7,19 @@ load_dotenv('.env')
 openai.api_key = os.environ.get('SECRET_KEY')
 
 def show_model()-> None:
+    """AI is creating summary for show_model
+
+    """
     openai.Model.list()
+
 
 def create_images(prompt: str, img_size: str, num_images: int) -> list:
     """Create Image from a Prompt using the OpenAI DALL-E model.
 
     Args:
         prompt (str): Message prompt to be used to generate the image.
-        img_size (str): Image pixel size. Accepts the following inputs: ["256x256", "512x512, "1024x1024"]
+        img_size (str): Image pixel size. Accepts the following inputs:
+                        ["256x256", "512x512", "1024x1024"]
         num_images (int): Number of images to request.
 
     Returns:
