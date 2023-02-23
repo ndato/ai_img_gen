@@ -1,10 +1,14 @@
-import os
 import openai
-from dotenv import load_dotenv
 
-load_dotenv('.env')
 
-openai.api_key = os.environ.get('SECRET_KEY')
+def init_openai(secret_key: str)-> None:
+    """Initialize OpenAI by giving Secret Key
+
+    Args:
+        secret_key (str): OpenAI Secret Key
+    """
+    openai.api_key = secret_key
+
 
 def show_model()-> None:
     """AI is creating summary for show_model

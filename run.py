@@ -1,4 +1,9 @@
-from ai_img_gen import create_images
+import os
+from ai_img_gen import create_images, init_openai
+from dotenv import load_dotenv
+
+load_dotenv('.env')
+init_openai(os.environ.get('SECRET_KEY'))
 
 while True:
     print("Press CTRL + C to exit.")
